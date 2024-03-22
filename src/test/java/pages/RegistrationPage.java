@@ -35,7 +35,7 @@ public class RegistrationPage extends BasePage{
         selectWithVisibleText(dayOptions, "5");
         selectWithVisibleText(dobMonth, "July");
         selectWithVisibleText(dobYear, "2000");
-        writeOnElement(email, "testt@email.com");
+        writeOnElement(email, "testt@gmail.com");
         writeOnElement(companyName, "XYZa");
         writeOnElement(password, "123456A");
         writeOnElement(confirmPassword, "123456A");

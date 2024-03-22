@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/mmrjrs/IdeaProjects/POM_NopCommerce/src/test/java/testcases">
+        <classes>
+<!--            <class name="testcases.TestHomePage">-->
+<!--                <methods>-->
+<!--                    <include name="testHomePageTitle"/>-->
+<!--                    <include name="testHomePageURL"/>-->
+<!--                    <include name="testHomePageRegistrationButton"/>-->
+<!--                    <include name="testHomePageLoginButton"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="testcases.TestLoginSwagLab">
+                <methods>
+                    <include name="testLoginWithValidCredentials"/>
+                    <include name="testLoginWithoutPassword"/>
+                    <include name="testLoginWithoutUsername"/>
+                    <include name="testLoginWithoutCredentials"/>
+                    <include name="testLoginWithInvalidCredentials"/>
+                </methods>
+            </class>
+<!--            <class name="testcases.TestRegistration">-->
+<!--                <methods>-->
+<!--                    <include name="testUserRegistrationProcess"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="testcases.TestSwagLabProduct">
+                <methods>
+                    <include name="testAddTCartButton"/>
+                    <include name="testRemoveCartItemButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

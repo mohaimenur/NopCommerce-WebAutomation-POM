@@ -1,11 +1,15 @@
 package pages;
 
+import io.qameta.allure.Allure;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.ByteArrayInputStream;
 import java.time.Duration;
 
 import static utilities.DriverSetup.getDriver;
@@ -93,7 +97,7 @@ public class BasePage {
 //    }
 //
 //    public void waitForElementToBeClickable(By locator){
-//        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
+//        WebDriverWait wait = new WebDriverWai t(getDriver(), Duration.ofSeconds(15));
 //        wait.until(ExpectedConditions.elementToBeClickable(locator));
 //    }
 //
@@ -101,6 +105,10 @@ public class BasePage {
 //        Select select = new Select(getElement(selectLocator));
 //        select.selectByVisibleText(visibleText);
 //    }
+
+    public void addScreenShot(String name){
+        Allure.addAttachment(name, new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES)));
+    }
 
 
 
