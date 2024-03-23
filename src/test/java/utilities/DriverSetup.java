@@ -65,7 +65,7 @@ public class DriverSetup {
 
         }
 
-    @BeforeSuite
+    @BeforeMethod
     public static synchronized void setBrowser(){
         WebDriver driver = createBrowser(browserName);
         driver.manage().window().maximize();
@@ -73,7 +73,7 @@ public class DriverSetup {
         setDriver(driver);
     }
 
-    @AfterSuite
+    @AfterMethod
     public static synchronized void quiteBrowser(){
         getDriver().quit();
     }

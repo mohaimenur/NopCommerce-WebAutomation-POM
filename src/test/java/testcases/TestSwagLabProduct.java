@@ -29,7 +29,7 @@ public class TestSwagLabProduct extends DriverSetup {
 
     @Test
     public void testRemoveCartItemButton(){
-        //swagLabProductPage.clickOnElement(swagLabProductPage.addToCartButton);
+        swagLabProductPage.clickOnElement(swagLabProductPage.addToCartButton);
         swagLabProductPage.clickOnElement(swagLabProductPage.removeCartItemButton);
         swagLabProductPage.addScreenShot("Remove product from cart");
         Assert.assertTrue(swagLabProductPage.isElementVisible(swagLabProductPage.addToCartButton));

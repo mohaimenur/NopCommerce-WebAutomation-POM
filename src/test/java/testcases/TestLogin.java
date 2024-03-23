@@ -18,8 +18,8 @@ public class TestLogin extends DriverSetup {
     @Test
     public void testLoginWithValidCredentials(){
         loginPage.demoLogin();
-        Assert.assertTrue(loginPage.isElementVisible(loginPage.errorLoginMsg));
-        Assert.assertEquals(loginPage.getElementText(loginPage.errorLoginMsg),loginPage.errorLoginText);
+        Assert.assertTrue(loginPage.isElementVisible(loginPage.confirmLoginMsg));
+        Assert.assertEquals(loginPage.getElementText(loginPage.confirmLoginMsg),loginPage.confirmLoginText);
 
     }
 

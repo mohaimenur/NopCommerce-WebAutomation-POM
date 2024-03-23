@@ -16,13 +16,15 @@ public class LoginPage extends BasePage{
     public By errorLoginMsg = By.xpath("//div[@class='message-error validation-summary-errors']");
 
     public String confirmLoginText = "Welcome to our store";
+
+    public String afterLoginURL = "https://demo.nopcommerce.com/";
     public String errorLoginText = "Login was unsuccessful. Please correct the errors and try again.\n" +
             "No customer account found";
 
 ///// Registration email and password is not saved
 
     public void demoLogin(){
-        writeOnElement(email,"test@gmail.com");
+        writeOnElement(email,"testttt@gmail.com");
         writeOnElement(password,"123456");
         clickOnElement(rememberMeCheckBox);
         //clickOnElement(forgotPasswordButton);

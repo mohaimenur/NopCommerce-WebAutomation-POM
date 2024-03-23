@@ -31,14 +31,14 @@ public class RegistrationPage extends BasePage{
         getDriver().get(registrationPageUrl);
         clickOnElement(genderMale);
         writeOnElement(firstName, "MDd");
-        writeOnElement(lastName, "Karidm");
+        writeOnElement(lastName, "Karitdm");
         selectWithVisibleText(dayOptions, "5");
         selectWithVisibleText(dobMonth, "July");
         selectWithVisibleText(dobYear, "2000");
-        writeOnElement(email, "testt@gmail.com");
+        writeOnElement(email, "testttt@gmail.com");
         writeOnElement(companyName, "XYZa");
-        writeOnElement(password, "123456A");
-        writeOnElement(confirmPassword, "123456A");
+        writeOnElement(password, "123456");
+        writeOnElement(confirmPassword, "123456");
         clickOnElement(registerBtn);
     }
 
